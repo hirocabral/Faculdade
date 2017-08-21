@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var valor = parseFloat(prompt('Digite o valor da diária do serviço: '));
+        var dias = parseInt(prompt('Digite quantos dias ele deseja contratar o serviço:'));
+        var total = valor * dias;
+        alert('O preço total do serviço é: '+total);
+        if(total < 1500){
+            alert('O pagamento deverá ser a vista');
+        }
+        else{
+            alert('O pagamento poderá ser parcelado em até 4 vezes.');
+            var parcelas = parseInt(prompt('Quantas parcelas você gostaria de pagar?'));
+            switch(parcelas){
+                case 1: 
+                    alert('Valor do pagamento é '+total);
+                    break;    
+                case 2: 
+                    var acrescimo = total * 0.10;
+                    var parcela = acrescimo/2;
+                    alert('Valor total é '+acrescimo+' e o valor da parcela é '+parcela);
+                    break;
+                case 3:
+                    var acrescimo = total * 0.12;
+                    var parcela = acrescimo/3;
+                    alert('Valor total é '+acrescimo+' e o valor da parcela é '+parcela);
+                    break;
+                case 4:
+                    var acrescimo = total * 0.15;
+                    var parcela = acrescimo/4;
+                    alert('Valor total é '+acrescimo+' e o valor da parcela é '+parcela);
+                    break;
+                default:
+                    alert('Valor inválido, tente novamente.');
+            }
+        }
+        </script>
+    </body>
+</html>
