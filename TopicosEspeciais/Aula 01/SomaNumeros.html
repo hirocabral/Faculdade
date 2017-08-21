@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+   // Solicita que o usuário digite um número
+   // Armazena na variável n o número digitado
+   var n= parseInt(prompt('Digite um número'));
+
+   // Declara uma variável soma e a inicializa com zero
+   var soma = 0;
+   // Declara a variável x, que será usada para ler os números
+   var x;
+
+   // Loop que vai repetir n vezes (para ler n números e somá-los)	
+   for (i = 1; i <= n; i++) {
+      // Solicita que o usuário digite um número, armazenando o número lido em x 
+      x= parseInt(prompt('Digite um número'));
+      // Soma x à variável soma 
+      soma += x;
+   }
+
+   // Informa a soma
+   alert('Soma= ' + soma);
+
+</script>
+</body>
+</html>

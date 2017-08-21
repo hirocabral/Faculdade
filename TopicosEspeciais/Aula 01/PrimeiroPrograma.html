@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+   // Solicita o nome do usuário
+   // O nome digitado é armazenado na variável nome
+   var nome= prompt('Digite o seu nome');
+   // Exibe mensagem de Boa noite ao usuário
+   alert('Boa noite, ' + nome + '!');
+
+   // Solicita que o usuário digite os valores de 2 notas
+   // Valores digitados são convertidos para float e armazenados 
+   // nas variáveis nota1 e nota2
+   var nota1= parseFloat(prompt('Digite a nota1'));
+   var nota2= parseFloat(prompt('Digite a nota2'));
+
+   // Calcula a média aritmética das notas
+   // Média é armazenada na variável media
+   var media= (nota1 + nota2)/2;
+   
+   // Exibe se o usuário passou o não, juntamente com a média
+   if (media >= 5)   // Verifica se a média é maior ou igual a 5
+      alert('Parabéns, você passou com média' + media);
+   else
+      alert('Tem que estudar mais. Média: ' + media);
+
+
+</script>
+</body>
+</html>

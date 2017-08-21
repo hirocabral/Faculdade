@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    // função somaNumeros - Recebe a quantidade de números a serem lidos
+    // Lê n números, calcula a soma dos números lidos e retorna essa soma
+   function somaNumeros(n) {
+     // Declara uma variável soma e a inicializa com zero
+	 var soma = 0;
+     // Declara a variável x, que será usada para ler os números
+     var x;
+
+     // Loop que vai repetir n vezes (para ler n números e somá-los)	
+     for (i = 1; i <= n; i++) {
+       // Loop para validação do número lido
+	   do {
+	     // Solicita que o usuário digite um número, armazenando o número lido em x 
+        x= parseInt(prompt('Digite o ' + i + 'o. número'));
+       } while(isNaN(x)); // repete esse loop enquanto x não for número
+       
+       // Soma x à variável soma 
+       soma += x;
+     }
+
+	 // retorna o valor da soma
+     return soma;
+   }
+
+   // Declaração da variável n, que conterá a quantidade de números a serem lidos
+   var n;
+   // Loop para validação do número lido
+   do{
+     // Solicita que o usuário digite um número
+     // Armazena na variável n o número digitado
+     n= parseInt(prompt('Digite a quantidade de números'));
+   } while(isNaN(n));  // repete esse loop enquanto n não for número
+
+   // Chama a função somaNumeros, passando n como argumento
+   // E exibe o valor da soma retornado pela função
+   alert('Soma= ' + somaNumeros(n));
+
+
+</script>
+</body>
+</html>

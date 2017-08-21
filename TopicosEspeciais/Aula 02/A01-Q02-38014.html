@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    function mediaPares(){
+        var digitado = 0;
+        var conta = 0;
+        do{
+            var valores = parseInt(prompt('Informe um numero:'));
+            var par = valores % 2;
+            if(par = 0){
+                digitado = digitado + valores;
+                conta++;
+            }
+            else{}
+        }
+        while(isNaN(valores));
+        var media = digitado/conta;
+        return media;
+    }
+    alert('A média é: '+mediaPares());
+</script>
+</body>
+</html>
